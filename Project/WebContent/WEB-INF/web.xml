@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://www.w3schools.com/ note.xsd" id="WebApp_ID" version="3.1">
+  <display-name>PCMasterRace</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>/pages/main/paginaPrincipale.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <resource-ref>
+    <description>Riferimento JNDI alla risorsa</description>
+    <res-ref-name>jdbc/PCMasterRace</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+  
+  
+  <servlet>
+    <servlet-name>ProductHandling</servlet-name>
+    <servlet-class>control.ProductHandling</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>CartHandling</servlet-name>
+    <servlet-class>control.CartHandling</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>LoginHandling</servlet-name>
+    <servlet-class>control.LoginHandling</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>OrderHandling</servlet-name>
+    <servlet-class>control.OrderHandling</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AdminHandling</servlet-name>
+    <servlet-class>control.AdminHandling</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AddrPayHandling</servlet-name>
+    <servlet-class>control.AddrPayHandling</servlet-class>
+  </servlet>
+  
+  <servlet>
+     <servlet-name>SigninInputHandling</servlet-name>
+     <servlet-class>control.SigninInputHandling</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+    <servlet-name>ProductHandling</servlet-name>
+    <url-pattern>/product</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>CartHandling</servlet-name>
+    <url-pattern>/carthandling</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>LoginHandling</servlet-name>
+    <url-pattern>/loginhandling</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>OrderHandling</servlet-name>
+    <url-pattern>/orderhandling</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AdminHandling</servlet-name>
+    <url-pattern>/adminhandling</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AddrPayHandling</servlet-name>
+    <url-pattern>/addrpayhandling</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+      <servlet-name>SigninInputHandling</servlet-name>
+      <url-pattern>/SigninInputHandling</url-pattern>
+   </servlet-mapping>
+</web-app>

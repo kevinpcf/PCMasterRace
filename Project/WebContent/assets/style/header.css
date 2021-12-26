@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+body {
+     background-color: tan;
+}
+
+#header_container{
+	 background-color:#FFC107;
+	 width:100%;
+	 position: sticky;
+	 display:flex;
+	 left:0;
+	 flex-direction:row;
+	 max-height:80px;
+	 border-top: solid 2px #000;
+	 border-right: solid 2px #000;
+	 border-left: solid 2px #000;
+	 border-bottom: solid 1px #000;
+}
+::placeholder{
+	font-family: Garamond;
+	font-size: 1.5em;
+}
+
+#bottonaus{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+}
+
+#scritta_logo{
+	padding:10px;
+}
+
+#scritta_logo > a > img{
+	width:8em;
+}
+
+
+#immagine_logo{
+	padding:10px;
+}
+
+#immagine_logo > a > img{
+	width: 4em;
+    margin-right: 8em;
+    margin-top: -0.7em
+}
+
+#barra_ricerca{
+	padding: 10px 10px 13px 5px;
+    margin: 10px 5px;
+    flex-grow: 3;
+    width: 39em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#barra_ricerca > input{
+	border-radius: 15px;
+    width: 200%;
+    height: 40px	
+}
+
+#bottoniera{
+	 display:flex;
+	 flex-direction:row;
+	 justify-content:flex-end;
+	 padding: 0px 2em;
+}
+
+#bottone_utente{
+	margin:10px;
+	padding: 0px 1em;
+}
+
+#bottone_utente > a > img{
+	border-radius:50%;
+}
+
+#bottone_carrello{
+	margin:10px;
+	padding: 0px 1em;
+}
+
+#bottone_carrello > a > img{
+	border-radius:50%;
+}
+
+#bottone_carrello > img:hover{
+	background-color: yellow;
+}
+
+#bottoniera > #utente{
+	margin-top:1em;
+	font-family: Impact, fantasy;
+	font-size:1em;
+}
+
+#bottoniera > #utente > a{
+	color:white;
+	text-decoration:none;
+	font-family: Impact, fantasy;
+	font-size:1em;
+}
+
+/* Computer */
+@media screen and (min-width: 769px) {
+  body {
+    background-color: white;
+    font-size: 1.2vw;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  body {
+    background-color: white;
+    font-size: 1.2vw;
+    
+  }
+  #immagine_logo > a > img{
+	width: 9em;
+    margin-right: 2em;
+}
+  #scritta_logo{
+  	display:none;
+  	width:0;
+  }
+  #bottoniera{
+	 display:flex;
+	 flex-direction:row;
+	 justify-content:flex-end;
+	 margin-left: -5em;
+}
+#barra_ricerca > input {
+    border-radius: 15px;
+    width: 18em;
+    height: 3em;
+    margin-left: -5em;
+}
+#barra_ricerca {
+    padding: 10px 0px 1px 0px;
+    margin: 10px -7em;
+    flex-grow: 3;
+    width: 38em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+#bottone_utente {
+    margin: 10px;
+    height: 2em;
+}
+#bottone_utente > a > img {
+    border-radius: 50%;
+    margin-left: 11em;
+    height: 6em;
+    margin-top: 1em;
+}
+#bottoniera > #utente {
+    margin-top: 2em;
+    font-family: Impact, fantasy;
+    font-size: 2em;
+    margin-left: 0.7em;
+}
+#bottone_carrello > a > img {
+    border-radius: 50%;
+    height: 6em;
+    margin-top: 1em;
+    margin-left: -3em;
+}
+#bottone_carrello {
+    margin: 10px;
+}
+}
+/* Telefono */
+@media screen and (max-width: 480px) and (min-width: 320px){
+  body {
+    background-color: white;
+    font-size: 1.2vw;
+    
+  }
+}

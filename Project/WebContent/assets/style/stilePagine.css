@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+body{
+	font-family: Garamond;
+	text-align:center;
+}
+
+center{
+	margin-top: 8.5%;
+}
+	
+#corpo{
+	padding: 2em;
+	font-size:1.7em;
+	display: table;
+	margin: 0 auto;
+	border-style: solid;
+	border-color: #ffc107;
+	margin-bottom: 2em;
+}
+
+#bottoni > a{
+	text-decoration: none;
+	width: 9em;
+    height: 3em;
+    border-radius: 15%;
+    margin-top: 2em;
+    font-weight: bold;
+    font-size: 1.1vw;
+    border-color: #FFC107;
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-color: #FFC107;
+    padding: 0.9em;
+}
+#bottoni > a:hover{
+	border-color: black;
+	background-color: #FFC107;
+}
+
+#bottoni{
+	font-size:1.5em;
+	border-color: #ffc107;
+}
+input{
+	outline:none;
+}
+
+input:hover{
+	outline:none;
+    border-color: #ffc107;
+}
+
+/* Computer */
+@media screen and (min-width: 769px) {
+  body {
+    background-color: white;
+    font-size: 1.2vw;
+  }
+}
+/* Tablet */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  body {
+    background-color: white;
+    font-size: 1.2vw;
+  }
+  #scritta_logo{
+  	display:none;
+  	width:0;
+  }
+}
+
+/* Telefono */
+@media screen and (max-width: 480px) and (min-width: 320px){
+  body {
+    background-color: white;
+    font-size: 1.2vw;
+  }
+}

@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+#totale{
+	font-family: Garamond;
+    text-align: center;
+    font-size: 1em;
+}
+
+#ordina > input{
+	width: 9em;
+    height: 3em;
+    border-radius: 15%;
+    margin-top: 2em;
+    font-weight: bold;
+    font-size: 1.1vw;
+    border-color: #FFC107;
+    background-color: white;
+}
+
+#ordina > input:hover{
+	border-color: black;
+	background-color: #FFC107;
+}
+
+#svuota > a{
+	text-decoration: none;
+	width: 9em;
+    height: 3em;
+    border-radius: 15%;
+    margin-top: 2em;
+    font-weight: bold;
+    font-size: 1.1vw;
+    border-color: #FFC107;
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-color: #FFC107;
+    padding: 0.9em;
+}
+
+#svuota > a:hover{
+	border-color: black;
+	background-color: #FFC107;
+}
+
+#titolo{
+	font-family: Garamond;
+    text-align: center;
+    font-size: 2.4em;
+    margin-top: 1em;
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+#total > h4{
+	font-size: 2em;
+    margin-bottom: 0em
+}
+
+#prodotto_singolo{
+	border-style: solid;
+    border-color: #FFC107;
+    padding: 1em 5em;
+    display: inline-flex;
+    margin-top: 1em;
+    width: 28em;
+}
+
+#prodotto_singolo > #immagine > a > img {
+	height: 9.7em;
+	margin-right: 7em;
+    margin-left: -3em
+}
+
+#prodotto_singolo > #dettagli > #prezzo{
+	font-weight:bold;
+}
+
+#prodotto_singolo > #dettagli > #quantita{
+	padding:1em 0px;
+}
+#prodotto_singolo > #dettagli > #quantita > input{
+	width:6em;
+	height: 1.5em;
+    font-weight: bold;
+}
+
+#prodotto_singolo > #dettagli > #quantita > input:hover{
+	border-color: #FFC107;
+	outline:none;
+}
+
+#ordina > input{
+	width: 9em;
+    height: 3em;
+    border-radius: 15%;
+    margin-top: 2em;
+}
+
+/* Computer */
+@media screen and (min-width: 769px) {
+  body {
+    background-color: white;
+     font-size: 1.2vw;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  body {
+    background-color: white;
+     font-size: 1.2vw;
+  }
+  #prodotto_singolo > #immagine > a > img {
+	margin-right: 2em;
+    margin-left: -3em
+}
+#totale{
+	font-family: Garamond;
+    text-align:center;
+    font-size:2.1em;
+}
+  
+  #scritta_logo{
+  	display:none;
+  	width:0;
+  }
+}
+
+/* Telefono */
+@media screen and (max-width: 480px) and (min-width: 320px){
+  body {
+    background-color: white;
+     font-size: 1.2vw;
+  }
+}

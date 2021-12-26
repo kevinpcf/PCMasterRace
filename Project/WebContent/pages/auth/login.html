@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link type="text/css" rel="stylesheet" href="/ProgettoTSW/assets/style/LoginRegistrazione.css">
+<title>Login</title>
+<body style="background-color:white">
+
+
+</head>
+
+<body>
+
+
+<div id="immagine">
+<br><br>
+	<a href="/ProgettoTSW/product"><img src="/ProgettoTSW/assets/images/scrittaLogo.png"></a>
+<br><br><br><br>
+
+</div>
+
+
+
+<form name="frm1" action="/ProgettoTSW/loginhandling" method=post onsubmit="event.preventDefault(); validate(this)">
+<script src="/ProgettoTSW/assets/script/login.js" type="text/javascript" ></script>
+
+<div id ="corpo">
+Dati login:<br><br>
+
+<input type=hidden name=action value=login>
+<input type=text name="username" id="username" placeholder=Username width=50px style="width:95%; height:35px; border-radius: 4px;"><br><br>
+<input type=password name="password" id="password" placeholder=Password style="width:95%; height:35px; border-radius: 4px;"><br><br>
+<div id="login">
+	<input type=submit value="Entra" onclick="verifica()">
+</div>
+<br>
+
+<div id ="registrati">
+	<a href="/ProgettoTSW/pages/auth/registrazione.html"><input type=button value="Registrati"></a>
+</div>
+<br>
+</div>
+</form>
+
+
+
+</body>
+</html>

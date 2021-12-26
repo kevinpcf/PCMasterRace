@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/ProgettoTSW">
+  <Resource auth="Container" driverClassName="com.mysql.cj.jdbc.Driver" name="jdbc/PCMasterRace" password="mysql14" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/PCMasterRace?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;useSSL=false&amp;allowPublicKeyRetrieval=true" username="root"/>
+</Context>

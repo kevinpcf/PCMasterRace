@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link type="text/css" rel="stylesheet" href="/ProgettoTSW/assets/style/LoginRegistrazione.css">
+<title>Registrazione</title>
+<body style="background-color:white">
+</head>
+
+<body>
+
+<form name="frm1" id="frm1" action="/ProgettoTSW/loginhandling" method=post onsubmit="event.preventDefault(); validate(this)">
+<script src="/ProgettoTSW/assets/script/jquery-3.5.1.js"></script>
+<script src="/ProgettoTSW/assets/script/registrazione.js" type="text/javascript"></script>
+
+	<div id="immagine">
+	<br><br>
+		<a href="/ProgettoTSW/product"><img src="/ProgettoTSW/assets/images/scrittaLogo.png"></a>
+	<br><br><br><br>
+	</div>
+
+
+<div id ="corpo">
+	Dati utente:
+	<br>
+	
+	<input type=hidden name=action value=registrazione>
+	
+	<input type=text name="nome" id="nome" placeholder=Nome style="width:100%; height:30px; border-radius: 4px;"> <br>
+	<input type=text name="cognome" id="cognome" placeholder=Cognome style="width:100%; height:30px; border-radius: 4px;"> <br>
+	<input type=text name="username" id="username" placeholder=Username style="width:100%; height:30px; border-radius: 4px;"> <br>
+	<input type=password name="password" id="password" placeholder=Password style="width:100%; height:30px; border-radius: 4px;"> <br><br>
+	Dati spedizione:
+	<br>
+	<input type=text name="via" id="via" placeholder=Via style="width:100%; height:30px; border-radius: 4px;"> <br>
+	<input type=text name="civico" id="civico" placeholder=Civico style="width:100%; height:30px; border-radius: 4px;"> <br>
+	<input type=text name="CAP" id="CAP" placeholder=CAP style="width:100%; height:30px; border-radius: 4px;"> <br>
+	<input type=text name="citta" id="citta" placeholder=Città style="width:100%; height:30px; border-radius: 4px;"> <br>
+	<input type=text name="provincia" id="provincia" placeholder=Provincia style="width:100%; height:30px; border-radius: 4px;"> <br><br>
+	Dati pagamento:
+	<br>
+	<input type=text name="numeroCarta" id="numeroCarta" placeholder="Numero carta" style="width:100%; height:30px; border-radius: 4px;"> <br>
+	<input type=text name="CVV" id="CVV" placeholder=CVV style="width:100%; height:30px; border-radius: 4px;"> <br>
+	<input type=text name="scadenza" id="scadenza" placeholder="Scadenza carta" style="width:100%; height:30px; border-radius: 4px;"> <br><br>
+	
+	<div id="registrati1">
+		<input type=button value="Registrati" onclick="verifica()">
+	</div>
+</div>
+
+
+</form>
+</body>
+</html>

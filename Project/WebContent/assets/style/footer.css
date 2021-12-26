@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+
+#footer_container{
+	background-color: #FFC107;
+	flex-direction: row;
+    left: 0;
+    right: 0;
+    width:100%;
+	position: sticky;
+	display:center;
+    border-top: solid 2px #000;
+	border-right: solid 2px #000;
+	border-left: solid 2px #000;
+	border-bottom: solid 2px #000;
+	margin-top: 12%;
+}
+#scritta_logo{
+	padding:10px;
+	}
+	
+#scritta_logo > img{
+	height: 5.5em;
+    display: block;
+    margin: 0px auto;
+    padding: 0px 0px 0.4em 0px;
+}
+
+#societa > h4{
+	display: block;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 1em;
+}
+#chi_siamo{
+	position:absolute;
+	margin-top: -5.4%;
+	margin-left: 8.5%;
+	color: black;
+}
+
+
+/* Computer */
+@media screen and (min-width: 769px) {
+  body {
+    background-color: white;
+    font-size: 1.2vw;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  body {
+    background-color: white;
+    font-size: 1.2vw;
+  }
+  #footer_container{
+	background-color: #FFC107;
+	flex-direction: row;
+    left: 0;
+    right: 0;
+    width:100%;
+	position: sticky;
+	display:center;
+    border-top: solid 2px #000;
+	border-right: solid 2px #000;
+	border-left: solid 2px #000;
+	border-bottom: solid 2px #000;
+	margin-top: 6%;
+	height:1em;
+	padding: 4em 0px;
+}
+#scritta_logo > img{
+	height: 50em;
+    display: block;
+    margin: 0px auto;
+    padding: 0px 0px 0.4em 0px;
+}
+}
+
+/* Telefono */
+@media screen and (max-width: 480px) and (min-width: 320px){
+  body {
+    background-color: white;
+    font-size: 1.2vw;
+  }
+}

@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+body{
+    font-family: Garamond;
+    text-align:center;
+}
+
+#immagine > a > img{
+	width:15em;
+	display: block;
+    margin: 0px auto;
+    text-align: center;
+}
+
+#corpo{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size:1.7em;
+    display: table;
+    margin: 0 auto;
+    border-style: solid;
+    border-color: #ffc107;
+}
+
+#corpo > #login > input{
+	font-family: Garamond;
+    font-size: 0.7em;
+    border-radius: 15%;
+    width: 2.8em;
+    background-color: white;
+    border-color: #ffc107;
+}
+
+#corpo > #login > input:hover{
+	border-color: black;
+	background-color: #FFC107;
+}
+
+#corpo > #registrati > a > input{
+	font-family: Garamond;
+    font-size: 0.7em;
+    border-radius: 15%;
+    width: 4.8em;
+    background-color: white;
+    border-color: #ffc107;
+}
+
+#corpo > #registrati > a > input:hover{
+	border-color: black;
+	background-color: #FFC107;
+}
+
+#corpo > #registrati1 > input{
+	font-family: Garamond;
+    font-size: 0.7em;
+    border-radius: 15%;
+    width: 4.8em;
+    background-color: white;
+    border-color: #ffc107;
+}
+#corpo > #registrati1 > input:hover{
+	border-color: black;
+	background-color: #FFC107;
+}
+
+#bottoni{
+    font-size:1.5em;
+    border-color: #ffc107;
+}
+input{
+    outline:none;
+}
+
+input:hover{
+    outline:none;
+    border-color: #ffc107;
+}
+
+/* Computer */
+@media screen and (min-width: 769px) {
+  body {
+    background-color: white;
+    font-size: 1.2vw;
+  }
+}
+/* Tablet */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  body {
+    background-color: white;
+    font-size: 1.2vw;
+  }
+  #corpo > #login > input{
+	font-family: Garamond;
+    font-size: 0.7em;
+    border-radius: 15%;
+    width: 4em;
+    background-color: white;
+    border-color: #ffc107;
+}
+#corpo > #registrati > a > input {
+    font-family: Garamond;
+    font-size: 0.7em;
+    border-radius: 15%;
+    width: 5em;
+    background-color: white;
+    border-color: #ffc107;
+}
+#corpo > #registrati1 > input{
+	font-family: Garamond;
+    font-size: 0.7em;
+    border-radius: 15%;
+    width: 5em;
+    background-color: white;
+    border-color: #ffc107;
+}
+  #scritta_logo{
+      display:none;
+      width:0;
+  }
+}
+
+/* Telefono */
+@media screen and (max-width: 480px) and (min-width: 320px){
+  body {
+    background-color: white;
+    font-size: 1.2vw;
+  }
+}

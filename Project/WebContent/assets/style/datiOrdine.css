@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+body{
+    font-family: Garamond;
+    text-align:center;
+}
+
+#corpo{
+	padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 1.0em;
+    display: table;
+    border-style: solid;
+    border-color: #ffc107;
+}
+
+#titolo{
+	font-size: 1.7vw; 
+	font-family: Garamond;
+    text-align:center;
+    font-weight: bold;
+    margin-top: 10%;
+}
+
+#ordina > input{
+	width: 9em;
+    height: 3em;
+    border-radius: 15%;
+    margin-top: 2em;
+    font-weight: bold;
+    font-size: 1.1vw;
+    border-color: #FFC107;
+    background-color: white;
+}
+
+#modifica > a{
+	text-decoration: none;
+	width: 9em;
+    height: 3em;
+    border-radius: 15%;
+    margin-top: 2em;
+    font-weight: bold;
+    font-size: 1.1vw;
+    border-color: #FFC107;
+    background-color: white;
+    color: black;
+}
+
+#modifica > a:hover{
+	border-color: black;
+	background-color: #FFC107;
+}
+
+#ordina > input:hover{
+	border-color: black;
+	background-color: #FFC107;
+}
+
+#footer{
+	bottom: 0; 
+	left: 0;
+	right: 0;
+}
+
+/* Computer */
+@media screen and (min-width: 769px) {
+  body {
+    background-color: white;
+    font-size: 1.2vw;
+  }
+}
+/* Tablet */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  body {
+    background-color: white;
+    font-size: 1.2vw;
+  }
+  #scritta_logo{
+      display:none;
+      width:0;
+  }
+}
+
+/* Telefono */
+@media screen and (max-width: 480px) and (min-width: 320px){
+  body {
+    background-color: white;
+    font-size: 1.2vw;
+  }
+}
