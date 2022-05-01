@@ -1,5 +1,5 @@
 # PCMasterRace
-PCMasterRace is an e-commerce that sells pc components with the goals to demonstrate the superiority of PCs over consoles.
+PCMasterRace is an e-commerce that sells pc components with the goal to demonstrate the superiority of PCs over consoles.
 The site shows various products and allows to add them to the cart without being logged in, to order one or more products it is necessary to have a registered account on the platform and be logged in.
 The site contains admin users who can add, edit and delete products.
 _______________________________________________________________________________________________________________
